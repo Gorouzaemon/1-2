@@ -1,0 +1,39 @@
+.btnlinestretches4{
+	display:inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #333;
+}
+.btnlinestretches4::before,.btnlinestretches4::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #dedede;
+    width: 100%;
+    content: "";
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+    /* z-index 1 */
+}
+.btnlinestretches4::after{
+    background-color: #333;
+    width: 0;
+}
+.btnlinestretches4:hover::after{
+    width: 100%; 
+}
+.btnlinestretches4 span::after{
+    width: 5px;
+    height: 5px;
+    border-top: #333 1px solid;
+    border-right: #333 1px solid;
+    transform: rotate(45deg);
+    transition: all 0.3s linear;
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -10px;
+}
+.btnlinestretches4:hover span::after{
+    right: -17px;
+}

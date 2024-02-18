@@ -1,0 +1,117 @@
+/* 
+   作成日：12/6
+   作成者：五右衛門
+*/
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+}
+body {
+    background-color: #f4f9ff;
+    color: #333;
+    font-size: 0.875rem;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.container{
+    max-width: 1000px;
+    margin:0 auto;
+}
+.inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 1.125rem;
+    margin-bottom:10px ;
+    font-weight: bold;
+}
+#header{
+    margin-top: 60px;
+}
+#header .site-title{
+    width: 160px;
+    line-height: 1px;
+    margin-bottom: 15px;
+}
+.mainvisual{
+    margin-bottom: 60px;
+}
+#index{
+    background-color: #fff;
+    padding: 30px 0;
+    margin-bottom: 60px;
+}
+#index .inner .index-list{
+    margin-left:20px;
+}
+#index .inner .index-list li{
+    margin-bottom: 20px;
+}
+#index .inner .index-list li:last-child{
+    margin-bottom: 0;
+}
+#detail{
+    margin-bottom: 100px;
+}
+#detail .inner .content{
+    display: flex;
+    align-items: flex-start;
+}
+#detail .inner .content .image{
+    margin-right: 60px;
+    width: 270px;
+    /* 良く理解できました。質問の
+    回答ありがとうございます */
+}#detail .inner .content .text .title{
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+#detail .inner .content .text dl{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 25px;
+    border-top: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+}
+#detail .inner .content .text dl dt{
+    width: 25%;
+}
+#detail .inner .content .text dl dd{
+    width: 75%;
+}
+#detail .inner .content .text p{
+    margin-bottom: 20px;
+}
+#detail .inner .content .text .link{
+    color: #333;
+}
+#footer{
+    font-size: 0.625rem;
+    padding: 15px 0;
+    display: flex;
+}
+@media screen and (max-width:1024px) {
+    .inner {
+        padding: 0 40px;
+      }
+      #header {
+        padding: 0 10px;
+      }
+      #mainvisual {
+        padding: 0 10px;
+      }
+      #detail .content {
+        flex-direction: column;  
+      }
+      #detail .inner .content .image {
+        width: 100%;
+        margin: 0 0 25px 0;
+      }
+}

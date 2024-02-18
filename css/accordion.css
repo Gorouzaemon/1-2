@@ -1,0 +1,58 @@
+.accordion-area{
+   list-style: none;
+   margin: 0 auto;
+   width: 97%;
+   max-width: 900px;
+}
+.accordion-area li{
+    margin: 10px 0;
+}
+.title{
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size:1rem;
+    font-weight: normal;
+    padding: 3% 3% 3% 50px;
+    transition: all .5s ease;
+}
+.title::after,.title::before{
+    content: "";
+    height:2px ;
+    width:15px ;
+    background-color: #333;
+    position: absolute;
+   top: 48%; 
+   left: 15px;
+}
+.title::before{
+    transform: rotate(0);
+}
+.title::after{
+    transform: rotate(90deg);
+}
+.title.close::before{
+    transform: rotate(45deg);
+}
+.title.close::after{
+	transform: rotate(-45deg);
+}
+.box{
+    display: none;
+    background-color: #f3f3f3;
+    padding: 3%;
+    margin: 0 3% 3% 3%;
+}
+.title2{
+    font-size: 1.125rem;
+    font-weight: bold;
+ }
+.title2::before{
+     content: "+";
+    padding:0 10px ;
+}
+.title-ex{
+     display: none;
+     background-color: #fff;
+     color: #333;
+    padding: 10px 15px;
+ }
