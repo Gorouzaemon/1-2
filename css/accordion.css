@@ -45,13 +45,26 @@
 .title2{
     font-size: 1.125rem;
     font-weight: bold;
+    position: relative;
  }
-.title2::before{
-     content: "+";
-    padding:0 10px ;
+ .title2::after,.title2::before{
+    content: "";
+    height:2px ;
+    width:15px ;
+    background-color: #333;
+    position: absolute;
+   top: 48%; 
+   left: -25px;
+   transition: all 0.3s ease-in-out;
+}
+.title2::after{
+    transform: rotate(90deg);
 }
 .title2.open::before{
-    transform: rotateX(45deg);
+    transform: rotate(45deg);
+}
+.title2.open::after{
+	transform: rotate(-45deg);
 }
 .title-ex{
      display: none;
