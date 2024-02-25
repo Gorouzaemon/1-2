@@ -79,6 +79,7 @@ a{
     margin-bottom: 25px;
     border-top: solid 1px #dedede;
     border-bottom: solid 1px #dedede;
+    margin: 0;
 }
 #detail .inner .content .text dl dt{
     width: 25%;

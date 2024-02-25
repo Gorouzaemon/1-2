@@ -22,9 +22,11 @@ $(function(){
    $('.title2').click(function(){
      if($('.title-ex').hasClass('open')){
         $('.title-ex').removeClass('open')
+        $('.title2').removeClass('open')
         $('.title-ex').slideUp(600);
      } else{
       $('.title-ex').addClass('open');
+      $('.title2').addClass('open');
       $('.title-ex').slideDown(600);
      };
    });

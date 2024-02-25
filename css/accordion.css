@@ -50,9 +50,15 @@
      content: "+";
     padding:0 10px ;
 }
+.title2.open::before{
+    transform: rotateX(45deg);
+}
 .title-ex{
      display: none;
      background-color: #fff;
      color: #333;
     padding: 10px 15px;
+ }
+ .title-ex .open{
+    display: block;
  }
